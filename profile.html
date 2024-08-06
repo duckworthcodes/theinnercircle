@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Inner Circle - Payment Gateway</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220217/pngtree-blue-technology-background-in-the-era-of-aesthetic-technology-and-intelligence-image_945156.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .form-container .content {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #ff9a9e;
+        }
+
+        .form-container img {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            animation: bounce 2s infinite;
+            display: none;
+        }
+
+        .form-container button.active {
+            display: inline-block;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        // Simulated check for payment completion
+        function checkPaymentCompletion() {
+            // Replace with actual logic to check payment status
+            const paymentCompleted = true; // Example: Assume payment is completed
+            
+            if (paymentCompleted) {
+                document.getElementById('completion-button').classList.add('active');
+            } else {
+                setTimeout(checkPaymentCompletion, 2000); // Check again after 2 seconds if payment not completed
+            }
+        }
+
+        // Start checking payment status on page load
+        window.onload = function() {
+            checkPaymentCompletion();
+        };
+    </script>
+</head>
+<body>
+    <div class="form-container">
+        <div class="content">
+            <h2>Join The Inner Circle</h2>
+            <p>Please scan the QR code below to pay and join our community.</p>
+            <img src="WhatsApp Image 2024-07-16 at 14.11.41_267538b4.jpg" alt="Google Pay QR Code">
+            <p>After payment, click the button below to complete your registration.</p>
+            <br>
+            <p>***Please Send A Snapshot Of Your Successful Transaction To Admin's Or Mod's DM Otherwise Your Registration Would Not Be Considered At All***</p>
+            <button id="completion-button" onclick="window.location.href='form.html(og).html'">Complete Registration</button>
+        </div>
+    </div>
+</body>
+</html>

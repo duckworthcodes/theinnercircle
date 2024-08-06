@@ -1,0 +1,141 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Main content */
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+main h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Lists and links */
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0044cc;
+}
+
+/* Contact info section */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info ul {
+    font-size: 1.1em;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Feedback section */
+.feedback {
+    margin-bottom: 30px;
+}
+
+.feedback h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    main h2 {
+        font-size: 1.5em;
+    }
+    main p {
+        font-size: 1em;
+    }
+}
